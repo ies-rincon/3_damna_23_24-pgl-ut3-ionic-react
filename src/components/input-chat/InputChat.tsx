@@ -23,7 +23,7 @@ const InputChat: React.FC<InputProps> = ({
   onIonChange,
 }) => {
   return (
-    <IonFooter>
+    <IonFooter className="input-chat">
       <IonItem>
         <IonInput
           placeholder="End your message with a '?'"

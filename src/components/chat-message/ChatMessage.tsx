@@ -1,11 +1,15 @@
 import React from "react";
 import { FromWho } from "../../constants/chat";
 import {
+  IonCol,
   IonContent,
   IonCardContent,
   IonImg,
   IonItem,
+  IonText,
   IonLabel,
+  IonGrid,
+  IonRow,
   IonSpinner,
 } from "@ionic/react";
 import "./ChatMessage.scss";
@@ -22,20 +26,26 @@ const ChatMessage: React.FC<ChatMessageProps> = ({
   imageUrl,
 }) => {
   const containerStyle =
-    fromWho === FromWho.Me ? "user-container" : "bot-container";
-  const textStyle = fromWho === FromWho.Me ? "user-text" : "bot-text";
-
+    fromWho === FromWho.Me
+      ? "container user-container ion-text-end"
+      : "container bot-container ion-text-start";
   return (
-    <IonItem className={`container ${containerStyle}`}>
-      <IonLabel className={textStyle}>{text}</IonLabel>
-      {fromWho === FromWho.Hers && imageUrl && (
-        <IonImg
-          className="message-image"
-          src={imageUrl}
-          alt="Image"
-          fallbackSrc={<IonSpinner name="circular" />}
-        />
-      )}
+    <IonItem>
+      <IonGrid className={containerStyle}>
+        <IonRow>
+          <IonCol>
+            <IonLabel color="light">{text}</IonLabel>
+            {fromWho === FromWho.Hers && imageUrl && (
+              <IonImg
+                className="image"
+                src={imageUrl}
+                alt="Image"
+                fallbackSrc={<IonSpinner name="circular" />}
+              />
+            )}
+          </IonCol>
+        </IonRow>
+      </IonGrid>
     </IonItem>
   );
 };

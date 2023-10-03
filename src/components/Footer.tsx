@@ -9,7 +9,7 @@ const Footer: React.FC<FooterProps> = ({ text }) => {
   return (
     <IonFooter>
       <IonToolbar color="primary">
-        <IonTitle class="ion-text-center" size="small">
+        <IonTitle className="ion-text-center" size="small">
           {text}
         </IonTitle>
       </IonToolbar>

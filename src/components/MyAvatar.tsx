@@ -20,13 +20,13 @@ const Header: React.FC<HeaderProps> = ({ title, avatarSource }) => {
     <IonHeader>
       <IonToolbar color="primary">
         <IonGrid>
-          <IonRow class="ion-justify-content-start">
+          <IonRow className="ion-justify-content-start">
             <IonCol size="2">
               <IonAvatar>
                 <IonImg src={avatarSource} alt="Avatar" />
               </IonAvatar>
             </IonCol>
-            <IonCol class="ion-align-self-center">
+            <IonCol className="ion-align-self-center">
               <IonTitle>{title}</IonTitle>
             </IonCol>
           </IonRow>

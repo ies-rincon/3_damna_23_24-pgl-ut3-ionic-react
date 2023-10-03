@@ -2,33 +2,18 @@
   position: fixed;
   width: 100%;
   left: 0;
-  bottom: 0;
-  padding: 15px;
-  padding-bottom: 30px;
+  bottom: 60px;
+  padding: 5px;
   background-color: #fff;
   transition: all 0.25s ease 0s;
 
   ion-input {
     background-color: #eaeaea;
-    border-radius: 15px;
-    --padding-top: 20px;
-    --padding-end: 20px;
-    --padding-bottom: 20px;
-    --padding-start: 20px;
+    border-radius: 22px;
+    margin-right: 10px;
 
     input {
-      padding-right: 60px !important;
+      padding: 5px !important;
     }
-  }
-
-  ion-icon {
-    position: absolute;
-    top: -7.5px;
-    right: 15px;
-    height: 100%;
-    z-index: 2;
-    font-size: 25px;
-    opacity: 0.6;
-    padding: 0 20px;
   }
 }

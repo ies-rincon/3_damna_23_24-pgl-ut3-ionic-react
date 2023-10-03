@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Yes No Maybe App</string>
+    <string name="title_activity_main">Yes No Maybe App</string>
+    <string name="package_name">yes.no.maybe.app</string>
+    <string name="custom_url_scheme">yes.no.maybe.app</string>
+</resources>

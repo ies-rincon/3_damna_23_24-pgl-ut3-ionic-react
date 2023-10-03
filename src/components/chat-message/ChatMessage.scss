@@ -1,37 +1,21 @@
 .container {
-  border: 1px solid #ccc;
-  border-radius: 12px;
-  max-width: 70%;
+  border-radius: 16px;
   margin-bottom: 8px;
-
-  .user-container {
-    align-self: flex-end;
-    background-color: --ion-color-primary;
+  padding: 10px;
+  &.user-container {
+    background-color: var(--ion-color-primary);
   }
-  .user-text {
-    color: white;
+  &.bot-container {
+    background-color: var(--ion-color-secondary);
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
-
-  &__text {
-    display: flex;
-    flex-direction: column;
-    background-color: #eaeaea;
-    width: 100%;
-    padding: 10px;
-    border-radius: 10px;
-    margin-left: 10px;
-
-    > span {
-      margin-bottom: 5px;
-      font-weight: bold;
-      opacity: 0.6;
-    }
-
-    &.me {
-      background-color: #2a45e3;
-      color: #fff;
-      margin-right: 10px;
-      margin-left: 0;
-    }
+  .image {
+    border-radius: 8px;
+    float: left;
+    height: 225px;
+    margin: 8px;
+    max-width: 70%;
+    padding: 12px;
   }
 }
